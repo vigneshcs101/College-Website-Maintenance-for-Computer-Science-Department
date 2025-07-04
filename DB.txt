@@ -1,0 +1,263 @@
+-- phpMyAdmin SQL Dump
+-- version 2.10.1
+-- http://www.phpmyadmin.net
+-- 
+-- Host: localhost
+-- Generation Time: Mar 24, 2025 at 09:23 AM
+-- Server version: 5.0.45
+-- PHP Version: 5.2.5
+-- 
+-- dddd
+-- 
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+-- 
+-- Database: `nationaldb`
+-- 
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `tb_act`
+-- 
+
+CREATE TABLE `tb_act` (
+  `id` int(11) NOT NULL,
+  `cat` varchar(100) NOT NULL,
+  `ename` varchar(1000) NOT NULL,
+  `reg` varchar(1000) NOT NULL,
+  `img` varchar(1000) NOT NULL,
+  `eyear` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- 
+-- Dumping data for table `tb_act`
+-- 
+
+INSERT INTO `tb_act` (`id`, `cat`, `ename`, `reg`, `img`, `eyear`) VALUES 
+(3, 'NSS', 'fdasdf', '645645', '1doctor.jpg', '1-Year'),
+(4, 'NSS', 'aasdasd', '45346', '2.png', '1-Year'),
+(5, 'NSS', 'dfasdf', 'w4534', '1.jpg', '3-Year'),
+(3, 'NSS', 'fdasdf', '645645', '1doctor.jpg', '2-Year'),
+(4, 'NSS', 'aasdasd', '45346', '2.png', '2-Year'),
+(5, 'NSS', 'dfasdf', 'w4534', '1.jpg', '3-Year'),
+(3, 'NSS', 'fdasdf', '645645', '1doctor.jpg', '2-Year'),
+(4, 'NSS', 'aasdasd', '45346', '2.png', '2-Year'),
+(5, 'NSS', 'dfasdf', 'w4534', '1.jpg', '3-Year'),
+(6, 'NSS', 'fdasdf', '645645', '1doctor.jpg', '2-Year'),
+(7, 'NSS', 'aasdasd', '45346', '2.png', '2-Year'),
+(8, 'NSS', 'dfasdf', 'w4534', '1.jpg', '3-Year'),
+(6, 'NSS', 'fdasdf', '645645', '1doctor.jpg', '2-Year'),
+(7, 'NSS', 'aasdasd', '45346', '2.png', '2-Year'),
+(8, 'NSS', 'dfasdf', 'w4534', '1.jpg', '3-Year'),
+(3, 'YRC', 'fdasdf', '645645', '1doctor.jpg', '1-Year'),
+(4, 'YRC', 'aasdasd', '45346', '2.png', '1-Year'),
+(5, 'YRC', 'dfasdf', 'w4534', '1.jpg', '3-Year'),
+(3, 'Sports', 'fdasdf', '645645', '1doctor.jpg', '2-Year'),
+(4, 'YRC', 'aasdasd', '45346', '2.png', '2-Year'),
+(5, 'YRC', 'dfasdf', 'w4534', '1.jpg', '3-Year'),
+(3, 'YRC', 'fdasdf', '645645', '1doctor.jpg', '2-Year'),
+(4, 'YRC', 'aasdasd', '45346', '2.png', '2-Year'),
+(5, 'YRC', 'dfasdf', 'w4534', '1.jpg', '3-Year'),
+(6, 'YRC', 'fdasdf', '645645', '1doctor.jpg', '2-Year'),
+(7, 'YRC', 'aasdasd', '45346', '2.png', '2-Year'),
+(8, 'YRC', 'dfasdf', 'w4534', '1.jpg', '3-Year'),
+(6, 'YRC', 'fdasdf', '645645', '1doctor.jpg', '2-Year'),
+(7, 'YRC', 'aasdasd', '45346', '2.png', '2-Year'),
+(8, 'YRC', 'dfasdf', 'w4534', '1.jpg', '3-Year');
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `tb_batch`
+-- 
+
+CREATE TABLE `tb_batch` (
+  `reg` varchar(10000) NOT NULL,
+  `ename` varchar(100) NOT NULL,
+  `fname` varchar(100) NOT NULL,
+  `dob` varchar(100) NOT NULL,
+  `eyear` varchar(100) NOT NULL,
+  `adds` varchar(1000) NOT NULL,
+  `phone` varchar(100) NOT NULL,
+  `eyear1` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- 
+-- Dumping data for table `tb_batch`
+-- 
+
+INSERT INTO `tb_batch` (`reg`, `ename`, `fname`, `dob`, `eyear`, `adds`, `phone`, `eyear1`) VALUES 
+('464565475', 'sdfsdf', 'sdfsdf', '2025-02-11', '2022-2023', 'setssdfg', '568657897589', ''),
+('202151', 'Ramya', 'Pal', '2025-01-27', '2022-2023', 'TRichy', '789870890', '1-Year');
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `tb_course`
+-- 
+
+CREATE TABLE `tb_course` (
+  `id` int(11) NOT NULL,
+  `ename` varchar(100) NOT NULL,
+  `cat` varchar(1000) NOT NULL,
+  `eyear` varchar(100) NOT NULL,
+  `edesc` varchar(10000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- 
+-- Dumping data for table `tb_course`
+-- 
+
+INSERT INTO `tb_course` (`id`, `ename`, `cat`, `eyear`, `edesc`) VALUES 
+(1, 'BCA', 'UG', '2 Year', '10Degree'),
+(2, 'Bsc(CS)', 'UG', '2-Year', 'sdfsdfg'),
+(3, 'MCA', 'PG', '3-Year', '3-Year');
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `tb_end`
+-- 
+
+CREATE TABLE `tb_end` (
+  `id` int(11) NOT NULL,
+  `ename` varchar(1000) NOT NULL,
+  `edate` varchar(1000) NOT NULL,
+  `edesc` varchar(1000) NOT NULL,
+  `edesc1` varchar(5000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- 
+-- Dumping data for table `tb_end`
+-- 
+
+INSERT INTO `tb_end` (`id`, `ename`, `edate`, `edesc`, `edesc1`) VALUES 
+(2, 'Endowment Lecture-V', '2025-02-27', 'IITM an Institute for all', 'Prof.V.Kamakoti , Director, Indian Institute of technology Madras'),
+(1, 'Endowment Lecture-V', '2025-02-27', 'IITM an Institute for all', 'Prof.V.Kamakoti , Director, Indian Institute of technology Madras'),
+(3, 'GR SOFT IT', '2025-03-19', 'Full Stack ', 'Miss.Revathy & Ram\r\n');
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `tb_event`
+-- 
+
+CREATE TABLE `tb_event` (
+  `id` int(11) NOT NULL,
+  `img` varchar(1000) NOT NULL,
+  `cat` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- 
+-- Dumping data for table `tb_event`
+-- 
+
+INSERT INTO `tb_event` (`id`, `img`, `cat`) VALUES 
+(1, 'bank.png', 'xvxcv'),
+(1, 'bank.png', 'xvxcv'),
+(2, 'car.jfif', 'Welfare'),
+(3, 'birds.jpg', 'Student Article');
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `tb_mou`
+-- 
+
+CREATE TABLE `tb_mou` (
+  `id` int(11) NOT NULL,
+  `ename` varchar(1000) NOT NULL,
+  `edate` varchar(1000) NOT NULL,
+  `edesc` varchar(1000) NOT NULL,
+  `edesc1` varchar(5000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- 
+-- Dumping data for table `tb_mou`
+-- 
+
+INSERT INTO `tb_mou` (`id`, `ename`, `edate`, `edesc`, `edesc1`) VALUES 
+(1, 'HCL TECH â€“ Chennai', '2025-02-25', 'Placement', 'Internship Activities to Students'),
+(2, 'GR SOFT', '2025-03-19', 'IT Traning Course', 'IT Traning Course\r\n2 year MOU');
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `tb_note`
+-- 
+
+CREATE TABLE `tb_note` (
+  `id` int(11) NOT NULL,
+  `eyear` varchar(10000) NOT NULL,
+  `sem` varchar(10000) NOT NULL,
+  `file` varchar(1000) NOT NULL,
+  `cat` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- 
+-- Dumping data for table `tb_note`
+-- 
+
+INSERT INTO `tb_note` (`id`, `eyear`, `sem`, `file`, `cat`) VALUES 
+(5, '1-Year', 'Semester-1', 'Appliances-banner.jpg', 'PG'),
+(6, '1-Year', 'Semester-1', '11_chapter 2 (2).pdf', 'UG'),
+(7, '1-Year', 'Semester-1', 'BabyName.pdf', 'PG'),
+(8, '1-Year', 'Semester-1', 'Registration Portal(4).jpg', 'UG');
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `tb_photo`
+-- 
+
+CREATE TABLE `tb_photo` (
+  `id` int(11) NOT NULL,
+  `img` varchar(1000) NOT NULL,
+  `cat` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- 
+-- Dumping data for table `tb_photo`
+-- 
+
+INSERT INTO `tb_photo` (`id`, `img`, `cat`) VALUES 
+(1, 'apartment.jpg', 'Conference'),
+(3, 'a.bmp', 'Conference'),
+(4, 'flower2.png', 'Conference'),
+(5, 'logo.png', 'Conference'),
+(6, 'a.bmp', 'Conference'),
+(7, 'a.bmp', 'Seminar'),
+(8, 'Penguins.jpg', 'Club Event'),
+(9, 'creativity.jpg', 'Conference');
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `tb_staff`
+-- 
+
+CREATE TABLE `tb_staff` (
+  `id` int(11) NOT NULL,
+  `ename` varchar(100) NOT NULL,
+  `cat` varchar(1000) NOT NULL,
+  `que` varchar(100) NOT NULL,
+  `edesc` varchar(10000) NOT NULL,
+  `img` varchar(1000) NOT NULL,
+  `img1` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- 
+-- Dumping data for table `tb_staff`
+-- 
+
+INSERT INTO `tb_staff` (`id`, `ename`, `cat`, `que`, `edesc`, `img`, `img1`) VALUES 
+(2, 'Revathy', 'Professor', 'MCA', 'sdgsdgs', '1.jpg', ''),
+(3, 'Dr.Ramya ', 'Ass.Professor', 'MCA.,Ph.D', 'Computer', '5.png', ''),
+(5, 'Revathy', 'Professor', 'MCA', 'sdgsdgs', '1.jpg', ''),
+(7, 'Rose Mary', 'Ass.Professor', 'MCA.,Ph.D', 'Lab', 'top-college-pic.jpg', ''),
+(8, 'Miss.Revathy', 'Professor', 'MCA', 'Cs', 'birds.jpg', ''),
+(9, 'sasikala', 'HOD & Ass.Professor', 'MCA', 'sasikala', 'sasimam.jpeg', 'Sasikala.pdf'),
+(9, 'sasikala', 'HOD & Ass.Professor', 'MCA', 'sasikala', 'sasimam.jpeg', 'Sasikala.pdf'),
+(9, 'sasikala', 'HOD & Ass.Professor', 'MCA', 'sasikala', 'sasimam.jpeg', 'Sasikala.pdf');
